@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    header{
+        padding: 5px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        a{
+            text-decoration: none;
+            color: black;
+            padding: 5px;
+            transition: 0.2s;
+            &:hover{
+                color: rgb(65, 84, 255);
+            }
+        }
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        .livros{
+            display: flex;
+            justify-content: space-around;
+            margin: 15px;
+        }
+    }
+
+    footer{
+        margin-top: 350px;
+        ul{
+            li{
+                margin-left: 50px;
+            }
+        }
+    }
+}
