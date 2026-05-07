@@ -1,0 +1,123 @@
+<!--
+Projeto: Formulário Tech Conference
+Disciplina: Desenvolvimento Web Front-end | Turma: ADS
+Autor: Murilo Amauri Paludetto
+
+Descrição: Formulário HTML5.
+
+Data: 06/05/2026
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário Completo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Cadastro</h1>
+    </header>
+
+    <main>
+
+        <!-- Formulário de Cadastro -->
+        <section>
+            <p>O formulario de cadastro deve ser desenvolvido aqui</p>
+
+            <form id="formCadastro">
+
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+
+                    <p>Este é um formulário de fieldset.</p>
+                    <p>Nome completo:</p>
+                    <input type="text" id="nome" name="nome" required minlength="3" placeholder="Seu nome">
+
+                    <p>Data de nascimento:</p>
+                    <input type="date" id="dataNascimento" name="dataNascimento" required>
+
+                    <p>Gênero:</p>
+                    <input type="radio" name="genero" value="masculino">Masculino
+                    <input type="radio" name="genero" value="feminino">Feminino
+                    <input type="radio" name="genero" value="outro">Outro
+
+                    <hr>
+
+                    <p>Interesses:</p>
+                    <input type="checkbox" id="" value="tecnologia">Tecnologia
+                    <input type="checkbox" id="" value="esportes">Esportes
+                    <input type="checkbox" id="" value="musica">Musica
+                    <input type="checkbox" id="" value="jogos">Jogos
+
+                    <hr>
+
+                    <p>Estado:</p>
+
+                    <select name="estado" id="estado">
+                        <option value="">Selecione</option>
+                        <option value="sp">SP</option>
+                        <option value="rj">RJ</option>
+                        <option value="go">GO</option>s
+                        <option value="ac">AC</option>
+                        <option value="to">TO</option>
+                        <option value="ma">MA</option>
+                        <option value="mg">MG</option>
+                    </select>
+
+                    <hr>
+
+                    <p>Mensagem:</p>
+
+                    <textarea name="mensagem" id="mensagem" placeholder="escreva a mensagem aqui."></textarea>
+
+                    <p>Upload de imagem:</p>
+                    <label for="arquivo">Selecione uma imagem</label>
+                    <input type="file" accept=".png, .jpg, .jpeg" id="arquivo" name="arquivo">
+                    <hr>
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Resetar</button>
+
+                </fieldset>
+            </form>
+        </section>
+
+        <!-- Resultado será exibido aqui, não é necessário editar-->
+        <section>
+            <h2 id="sec-resultado">Resultado</h2>
+            <div id="resultado"></div>
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>&copy; 2026 - Formulário Turma 01 ADS</p>
+
+        <nav aria-label="Documentações">
+            <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                    alt="Documentação HTML" width="40">
+            </a>
+
+            <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                    alt="Documentação CSS" width="40">
+            </a>
+
+            <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                    alt="Documentação JavaScript" width="40">
+            </a>
+        </nav>
+
+    </footer>
+
+</body>
+
+</html>
