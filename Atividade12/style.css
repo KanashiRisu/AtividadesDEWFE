@@ -102,6 +102,12 @@ body{
                 margin: 8px;
                 padding: 16px;
                 width: 100%;
+                transition: ease-out 0.3s;
+                &:hover{
+                    transform: translate(0, -3px);
+                    box-shadow: 0 3px 4px #00d40b;
+                    background-color: #d5ebd6;
+                }
                 img{
                     width: 300px;
                     margin-right: 8px;
