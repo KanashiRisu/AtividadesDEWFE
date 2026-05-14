@@ -4,13 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
     <title>Bootstrap | Site</title>
 </head>
 <body>
     <header class="container">
-        <div class="d-flex row text-center justify-content-between">
-            <h1 class="col-6 col-md-4 col-lg-4">Site</h1>
-            <h1 class="col-6 col-md-4 col-lg-4">☰</h1>
+        <div class="d-flex text-center justify-content-between">
+            <h1 class="col-4 col-md-4 col-lg-4">Site</h1>
+
+            <nav class="d-flex row text-center justify-content-between navbar">
+                
+                <a href="#" class="col-4 col-md-4 col-lg-4 headerNav"><h2>Home</h2></a>
+                <a href="#" class="col-4 col-md-4 col-lg-4 headerNav"><h2>Contato</h2></a>
+                <a href="#" class="col-4 col-md-4 col-lg-4 headerNav"><h2>Sobre</h2></a>
+                <button class="navbar-brand dropdown ">☰</button>
+            </nav>
         </div>
 
     </header>

@@ -1,0 +1,16 @@
+.dropdown{
+    display: block;
+}
+.headerNav{
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .dropdown{
+        display: none;
+    }
+    .headerNav{
+        display: block;
+    }
+    
+}
