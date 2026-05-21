@@ -5,6 +5,27 @@
     display: none;
 }
 
+.cor-1{
+    background-color: rgb(79, 79, 116);
+    
+}
+
+.cor-2{
+    background-color: rgb(47, 153, 135);
+}
+
+.cor-3{
+    background-color: rgb(196, 63, 167);
+
+}
+
+main{
+    margin-top: 120px;
+}
+footer{
+    margin-top: 100px;
+}
+
 @media (min-width: 768px) {
     .dropdown{
         display: none;
