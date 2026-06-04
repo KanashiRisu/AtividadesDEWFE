@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="/Atividade14/css/style.css">
+    <title>Bootstrap | Site</title>
+</head>
+<body id="home">
+    <header class="container-fluid  bg-dark text-white shadow fixed-top">
+        <div class="d-flex text-center justify-content-between">
+            <h1 class="col-4 col-md-4 col-lg-4 mt-3">Apartamentos NovoMundo</h1>
+
+            <nav class="d-flex row text-center justify-content-between navbar mt-3">
+                <a href="/Atividade14/index.html" class="col-4 col-md-4 col-lg-4 headerNav text-decoration-none text-white p-1"><h2>Home</h2></a>
+
+                <div class="d-flex flex-column p-5">
+
+                    <button class="btn dropdown position-absolute top-0 end-0 bg-secondary m-3" type="button" data-bs-toggle="collapse" data-bs-target="#dropHeader" aria-expanded="false" aria-controls="dropHeader">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse bg-primary text-white p-3 position-absolute top-0 end-0 dropdown" id="dropHeader">
+                        <ul class="nav flex-column text-center">
+                            <button class="btn dropdown position-absolute top-0 start-0 " type="button" data-bs-toggle="collapse" data-bs-target="#dropHeader" aria-expanded="false" aria-controls="dropHeader">
+                                <span class="fs-4 btn-close"></span>
+                            </button>
+                            <li class="nav-item mt-3"><a class="nav-link text-white" href="/Atividade14/index.html">Home</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+            
+        
+    </header>
+
+   <main class="container text-center p-3">
+    <div class="row justify-content-center">
+        <div class="col-md-6 p-3">
+            <div class="cor-1 p-3 rounded-4 shadow">
+                <img src="/Atividade14/images/quarto02.jpg" alt="" class="img-fluid shadow">
+                <h1 class="text-white">R$110,00</h1>
+                <div>
+                    <button type="button" class="btn btn-primary m-3 shadow">Alugar</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="desc col-md-6">
+            <h1>Quarto legal!</h1>
+        </div>
+    </div>
+    </main>
+
+    <footer class="bg-dark text-white p-3 text-center">
+        <p>© 2026 Apartamentos NovoMundo</p>
+    </footer>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

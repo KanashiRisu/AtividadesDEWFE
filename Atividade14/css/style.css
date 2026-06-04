@@ -18,12 +18,20 @@
     background-color: rgb(196, 63, 167);
 
 }
+.desc{
+    padding: 10px;
+    background-color: antiquewhite;
+    width: 100%;
+}
 
 main{
     margin-top: 155px;
 }
 footer{
     margin-top: 100px;
+    position:relative;
+    width: 100%;
+    bottom: 0;
 }
 
 @media (min-width: 768px) {

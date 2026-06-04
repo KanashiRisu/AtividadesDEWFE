@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Senha 8 caracteres</title>
+</head>
+<body>
+
+    <p id="mensagem"></p>
+    <input type="password" id="senha" oninput="validarSenha()">
+    <button type="button" id="alt" onclick="alternar()">Mostrar</button>
+    <br>
+    <input type="checkbox" name="checkbox" id="checkbox" onchange="visualizar()"> Sou estudante
+    <fieldset id="camposOcultos">
+        <label for="">
+            <p>Curso: </p>
+            <input type="text">
+        </label>
+        <label for="">
+            <p>Instituição: </p>
+            <input type="text">
+        </label>
+        <label for="">
+            <p>Périodo: </p>
+            <input type="date" name="" id="">
+            <p>a</p>
+            <input type="date" name="" id="">
+        </label>
+    </fieldset>
+
+
+    <script>
+        const mensagemElement = document.getElementById("mensagem");
+        
+        let mensagem, cor;
+
+        function validarSenha(){
+            let senha = document.getElementById("senha").value;
+            
+            if (senha.length < 8){
+
+                mensagem = "A senha deve ter pelo menos 8 caracteres.";
+                cor = "red";
+            }else{
+                mensagem = "Senha válida";
+                cor = "green";
+            }
+
+            mensagemElement.textContent = mensagem;
+            mensagemElement.style.color = cor;
+        }
+
+        function alternar(){
+            const inputSenha = document.getElementById('senha');
+            const altElement = document.getElementById("alt");
+            
+            let altMensagem;
+
+            if (inputSenha.type === "password") {
+                inputSenha.type = "text";
+                altMensagem = "Ocultar"
+            }else{
+                inputSenha.type = "password";
+                altMensagem = "Mostrar"
+            }
+            altElement.textContent = altMensagem;
+        }
+        function visualizar(){
+            const checkbox = document.getElementById("checkbox");
+            const fieldset = document.getElementById("camposOcultos");
+
+            if (checkbox.checked){
+                fieldset.style.display = 'block';
+            } else{
+                fieldset.style.display = 'none';
+            }
+        }
+
+    </script>
+</body>
+</html>

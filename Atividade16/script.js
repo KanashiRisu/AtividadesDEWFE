@@ -1,9 +1,10 @@
+const btn = document.getElementById('btnLimpar')
+const listaTarefas = document.getElementById('listaTarefas');
 let contagem = 1;
 
 function addTarefa() {
     const inputElement = document.getElementById('novaTarefa');
     const mensagemElement = document.getElementById('mensagem');
-    const listaTarefas = document.getElementById('listaTarefas');
     
     let novaTarefa = document.createElement('li');
     let mensagem, cor;
@@ -16,7 +17,7 @@ function addTarefa() {
         contagem++;
         listaTarefas.appendChild(novaTarefa);        
         
-        mensagem = "Adcionado com Sucesso";
+        mensagem = "Adicionado com Sucesso";
         cor = 'green';
     }else{
         mensagem = "Tarefa vazia, redigite";
@@ -28,6 +29,9 @@ function addTarefa() {
     
     inputElement.value = "";
     inputElement.focus();
+
+    
+    botao(contagem);
 }
 
 function TarefaValida(tarefa) {
@@ -41,7 +45,6 @@ function limpar() {
 }
 
 function botao(contagem) {
-    const btn = document.getElementById('btnLimpar')
     if (contagem > 1) {
         btn.style.display = 'block';
     }else{
