@@ -41,9 +41,12 @@
                 <div>
                     <p id="mensagemSenha"></p>
                     <label for="senha">Senha:</label>
-                    <input oninput="validarSenha()" type="password" id="senha" name="senha" placeholder="Min 8 digitos" required>
+                    <div style="display: flex;">
+                        <input oninput="validarSenha()" type="password" id="senha" name="senha" placeholder="Min 8 digitos" required>
+                        <button type="button" id="alt" onclick="alternar()">Mostrar</button>
+                    </div>
                 </div>
-
+                
                 <div>
                     <label for="confirmar-senha">Confirmar Senha:</label>
                     <p id="mensagemSenha2"></p>
@@ -109,7 +112,25 @@
             mensagemElement.innerText = mensagemSenha;
             mensagemElement.style.color = corSenha;
             
+        }
 
+        function alternar(){
+            const inputSenha = document.getElementById('senha');
+            const inputSenha2 = document.getElementById('confirmar-senha');
+            const altElement = document.getElementById("alt");
+            
+            let altMensagem;
+
+            if (inputSenha.type === "password") {
+                inputSenha.type = "text";
+                inputSenha2.type = "text";
+                altMensagem = "Ocultar"
+            }else{
+                inputSenha.type = "password";
+                inputSenha2.type = "password";
+                altMensagem = "Mostrar"
+            }
+            altElement.textContent = altMensagem;
         }
     </script>
 </body>
